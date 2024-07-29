@@ -24,19 +24,19 @@ We will use Docker to containerize the Go web application. Docker is a container
 Commands to build the Docker container:
 
 ```bash
-docker build -t <your-docker-username>/go-web-app .
+docker build -t poovarasan9797/go-web-app:v1 .
 ```
 
 Command to run the Docker container:
 
 ```bash
-docker run -p 8080:8080 <your-docker-username>/go-web-app
+docker run -d -p 8080:8080 poovarasan9797/go-web-app:v1
 ```
 
 Command to push the Docker container to Docker Hub:
 
 ```bash
-docker push <your-docker-username>/go-web-app
+docker push poovarasan9797/go-web-app:v1
 ```
 
 ## Continuous Integration (CI)
